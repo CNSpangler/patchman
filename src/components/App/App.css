@@ -1,0 +1,116 @@
+html {
+  background: #212121;
+}
+
+.belt {
+  height: 25px;
+  width: 100%;
+  background-color: #fac402;
+}
+
+.mainGrid {
+  display: grid;
+  align-items: start;
+  margin: 0;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 20vh 1fr 1fr;
+  grid-row-gap: 7px;
+  gap: 1px 3px;
+  grid-template-areas: "Header Header Header Header" "History Form Form Form" "History Results Results Results";
+}
+
+.Header { 
+  grid-area: Header;
+  color: #fac402;
+  background: #212121;
+
+  h3 {
+    color: #646464;
+  }
+}
+
+.History { 
+  grid-area: History;
+  height: 80vh; 
+  overflow: scroll;
+  background-color: white;
+}
+
+.Form {
+  display: grid;
+  grid-area: Form;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.8fr 0.5fr 2.5fr;
+  gap: 1px 1px;
+  grid-template-areas: "RadioGroup RadioGroup RadioGroup RadioGroup RadioGroup" "url url url url button" "body body headers headers headers";
+  max-height: 40vh;
+}
+
+.RadioGroup {
+  display: grid;
+  grid-area: RadioGroup;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 1px 1px;
+}
+
+.radioButtonContainer {
+  position: relative;
+
+  input[type="radio"] {
+  width: 100%;
+  opacity: 0;
+  }
+
+  input[type="radio"] + label {
+    border: 1px solid #999;
+    background: #EEE;
+    padding: 4px 12px;
+    border-radius: 4px 4px 0 0;
+  }
+
+  input[type="radio"]:hover + label {
+    background: #f5dd41;
+  }
+
+  input[type="radio"]:checked + label {
+    background: rgb(240, 179, 11);
+    border-bottom: 1px solid transparent;
+  }
+
+  .radioButton {
+    position: absolute;
+    bottom: 0;
+    width: 85%;
+    height: 30%;
+  }
+
+}
+
+.url { grid-area: url; }
+
+.button { 
+  grid-area: button;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: rgb(240, 179, 11);
+  background: #646464;
+}
+
+.body { 
+  grid-area: body;
+  height: 24vh;
+}
+
+.headers { 
+  grid-area: headers;
+  border: solid 1px rgb(211, 211, 211);
+  background: #FFFFFF;
+}
+
+.Results { 
+  background: #FFFFFF;
+  grid-area: Results;
+  height: 40vh;
+  overflow: scroll;
+}
