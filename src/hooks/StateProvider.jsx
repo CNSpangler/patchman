@@ -81,14 +81,14 @@ export const useHandleUrlChange = () => {
   return handleUrlChange;
 };
 
-export const useHandleMethodChange = () => {
-  const { handleMethodChange } = useContext(StateContext);
-  return handleMethodChange;
-};
-
 export const useHandleBodyChange = () => {
   const { handleBodyChange } = useContext(StateContext);
   return handleBodyChange;
+};
+
+export const useHandleMethodChange = () => {
+  const { handleMethodChange } = useContext(StateContext);
+  return handleMethodChange;
 };
 
 export const useHandleSubmit = () => {
