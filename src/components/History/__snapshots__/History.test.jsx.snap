@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`History component renders History  1`] = `
+<ContextProvider
+  value={
+    Object {
+      "body": "",
+      "handleBodyChange": [Function],
+      "handleMethodChange": [Function],
+      "handleSubmit": [Function],
+      "handleUrlChange": [Function],
+      "history": Array [],
+      "method": "GET",
+      "results": "",
+      "url": "",
+    }
+  }
+>
+  <History />
+</ContextProvider>
+`;

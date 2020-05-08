@@ -1,9 +1,14 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`App component renders App 1`] = `
-<div
-  className="mainGrid"
->
-  <Header />
-</div>
+<StateProvider>
+  <div
+    className="mainGrid"
+  >
+    <Header />
+    <Form />
+    <Results />
+    <History />
+  </div>
+</StateProvider>
 `;
