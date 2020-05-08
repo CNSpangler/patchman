@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from '../App/App.css';
-import { useUrl, useHandleUrlChange, useHandleBodyChange, useBody, useHandleMethodChange, useHandleSubmit } from '../../hooks/StateProvider';
+import { useUrl, useHandleUrlChange, useHandleBodyChange, useBody, useHandleMethodChange, useHandleSubmit, useMethod } from '../../hooks/StateProvider';
 
 /* eslint-disable react/prop-types */
 const RadioGroup = ({ name, onChange, children }) => {
